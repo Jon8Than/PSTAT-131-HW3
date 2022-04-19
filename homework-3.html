@@ -1758,11 +1758,9 @@ discriminant analysis model for classification using the
 <pre class="r"><code>lda_mod &lt;- discrim_linear() %&gt;% 
   set_mode(&quot;classification&quot;) %&gt;% 
   set_engine(&quot;MASS&quot;)
-
 lda_wkflow &lt;- workflow() %&gt;% 
   add_model(lda_mod) %&gt;% 
   add_recipe(Titanic_recipe)
-
 lda_fit &lt;- fit(lda_wkflow, Titanic_train)</code></pre>
 </div>
 <div id="question-7" class="section level3">
